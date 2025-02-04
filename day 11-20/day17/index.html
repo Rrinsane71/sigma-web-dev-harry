@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in Css</title>
+
+    <style>
+        /* Selectors diffrent types */
+        .red {
+            background-color: red;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+
+        /* Child Selector */
+        div>p {                  
+            color: black;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: black;
+        }
+
+        /* universal selector */
+        * div {
+
+            color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        I am Css selector
+        <article>
+            <p>
+                yo i am a paragraph #desendant here as its in article
+            </p>
+        </article>
+    </div>
+
+    <div id="yellow">
+        I m hero
+    </div>
+    
+</body>
+
+</html>

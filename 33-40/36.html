@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Multi Color website</title>
+</head>
+<style>
+    *{
+        margin: 0;padding: 0;
+    }
+    :root{
+        --color:rgb(27, 14, 219);
+        --secr: rgb(16, 105, 194);
+    }
+    ul li{
+        display: inline-flex;
+
+        list-style: none;
+        padding-left: 2px;
+        padding-right: 25px;
+        /* text-decoration: underline;
+        text-decoration-color: rgb(239, 228, 228);
+        color: white;
+        font: bolder;
+        background-color: aqua; */
+    }
+    ul{
+        border: 2px solid yellow;
+    }
+    li{
+        border: 2px solid black;
+    }
+    nav{
+        background-color: var(--color);
+        padding: 12px 2px;
+        border: 2px solid orange;
+    }
+    body{
+        background-color:var(--secr);
+    }
+    a{
+        color: black;
+    }
+    a:hover{
+        background-color: aliceblue;
+    }
+</style>
+<body>
+        <header>
+            <nav>
+                    <ul>
+                        <li><a href="/">Home </li></a>
+                        <li><a href="/">Contact</li></a>
+                        <li><a  href="/">Info</li></a>
+                    </ul>
+            </nav>
+        </header>
+</body>
+</html>

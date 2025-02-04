@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSs variables</title>
+</head>
+<style>
+    :root{
+        --color: green;
+        --seccolor: rgb(30, 30, 130);
+        --defpad : 21px;
+        /* --op:0.3 */
+    }
+    *{margin: 0;padding: 0;}
+    .nav,ul{ 
+        /* background-color: aqua; */
+        background-color:  var(--color);
+        /* display: flex; */
+        /* list-style: none; */
+    }
+    .container{
+        /* background-color: aquamarine; */
+        background-color:  var(--seccolor);
+    }
+    ul{
+        display: flex;
+    }   
+    ul,li{
+        list-style: none;
+        padding: var(--defpad);
+        opacity: var(--op);
+        
+    }
+    ul li:first-child{
+        --color: rgb(215, 206, 26);
+
+        /* if color is not found then it will appply blue. */
+        background-color: var(--color,blue);     
+        border: 2px solid var(--seccolor);
+    }
+    
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>Info</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias eligendi nobis provident omnis amet illum error
+        consequuntur ipsum sint. Voluptatem repudiandae alias hic sequi vel placeat, molestiae ut aperiam nostrum nam
+        numquam soluta cum ipsa, quisquam eaque commodi dignissimos labore! In exercitationem repellendus minima
+        reprehenderit?
+    </div>
+</body>
+
+</html>

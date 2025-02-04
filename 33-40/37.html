@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Layout</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+    }
+    main{
+        background-color: black;
+        height: 125vh;
+        padding: 20px;
+    }
+    header{
+        position: sticky;
+        top: 0;
+    }
+    nav{
+        background-color: blueviolet;
+        border: 2px solid black;
+        padding:10px 20px;
+    }
+        ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 5px 5px;
+            padding-right: 30px;
+            font-size: large;
+            font-weight: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+        .parent{
+            height: 100vh;
+            width: 95vw;
+            background-color: green;
+            margin: 10px 20px 10px 20px;
+            display: flex;      
+            /* justify-items: center; */
+        }
+        .box1{
+            height: 600px;
+            width: 45%;
+            background-color: aqua;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .box2{
+            height: 600px;
+            width: 45%;
+            background-color: blue ;  
+            margin: auto;
+            margin-top: 30px;
+        }
+        .box{
+            padding-left: 2px;
+            border: 2px solid rgb(156, 34, 34);
+            margin-left: 20px;
+            height: 10vh;
+            padding: 8px;
+            width: 95vw;
+            box-sizing: border-box;
+            color: rgb(133, 42, 42);
+            padding-bottom: 100px;
+        }
+        .circle{
+            width: 50px;
+        }
+        .footer{
+            height:50px;
+            background-color: blueviolet;
+            margin-top: 0px;
+        }
+        .orange{
+            width: 30px;
+            height:31px;
+            position: fixed;
+            bottom: 12px;
+            right: 23px;
+            border-radius: 39px;
+            background-color: orange;
+
+            }
+</style>
+<body>
+        <header>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="parent">
+                <div class="box1"></div>
+                <div class="box2"></div>
+            </div>
+            <div class="box">
+                Hello Welcome to Css by Sigma web harry
+            </div>
+        </main>
+
+            <div class="orange"></div>
+            <footer class="footer"></footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ball animation</title>
+    <style>
+        .ball{
+            height: 35px;
+            width: 35px;
+            position:absolute;
+            background-color: yellow;
+            bottom: 0;
+            border-radius: 120px;
+            animation: animeX 10s linear infinite alternate, animeY 1s ease-out infinite alternate;
+
+        }
+        .container{
+            height: 80vh;
+            width: 60vw;
+            background-color: blue;
+            position: relative;
+            /* animation: animeX 3s linear infinite; */
+        }
+        @keyframes animeX{
+            from{
+                left: 0;
+
+            }
+            to{
+                left: 90%;
+            }
+        }
+        @keyframes animeY {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom:50%
+            }
+        
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+                <div class="ball"></div>
+        </div>
+</body>
+</html>

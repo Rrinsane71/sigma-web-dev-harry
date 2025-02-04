@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Css box model and margin collapse</title>
+
+    <style>
+        /* .box{
+            margin: 5px;
+        } */
+
+        *{
+            padding: 0;
+            /* margin: 0; */
+        }
+
+        .box1{
+            color: red;
+            background-color: aqua;
+            padding: 5px;
+            height: 200px;
+            border: 5px solid black;
+            margin: 20px;       
+            box-sizing: border-box; 
+        }
+        .box2{
+            color:yellow;
+            background-color:purple;
+            padding: 5px;
+            border: 5px solid blue;
+            height: 200px;
+            margin: 20px;
+        }
+
+         /* #margin collapse */
+
+         
+    </style>
+</head>
+<body>
+    
+    <div class="box box1">
+        Hello i am box 1 s
+    </div>
+
+    <div class="box box2">
+        Hello i am box2
+    </div>
+
+
+</body>
+</html>

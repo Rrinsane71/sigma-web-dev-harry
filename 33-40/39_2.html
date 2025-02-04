@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+
+    <style>
+        .parent{
+            /* height: 20vh; */
+            /* width: 50vw; */
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav "
+                                            "side article article "
+                                                "f f f ";
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(4,minmax(100px,1fr));
+
+            place-content: centre;
+        }
+        .items{
+            /* background-color: blue; */
+            height: 60px;
+            /* width: 60px; */
+            border: 1px solid black;
+        }
+        .items-1{
+            grid-area: nav;
+            background-color: rgb(174, 32, 32);
+        }
+        .items-2{
+            grid-area: side;
+            background-color: rgb(255, 217, 0);
+        }
+        .items-3{
+            grid-area: article;
+            background-color: blue;
+        }
+        .item-4{
+            grid-area: f;
+            background-color: red;
+        }
+        .item-5{
+            grid-area: nav;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="parent">
+                <div class="items items-1">10</div>
+                <div class="items items-2" >2</div>
+                <div class="items items-3">3</div>
+                <div class="items item-4">4</div>
+                <div class="items item-5">5</div>
+        </div>
+</body>
+</html>

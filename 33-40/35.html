@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On selectors</title>
+</head>
+    <style>
+        .box:first-child{
+            background-color: red;
+        }
+        /* .box::first-line{
+            color: yellow;
+        } */
+        /* .boxes *{
+            border :2px solid blue
+        }
+        .box,[data-color="primary"]{
+            margin-top: 45px;
+            padding-top: 45px;
+        } */
+         /* .box:nth-child(even){
+            background-color: aqua;
+         } */
+
+         /* .box:nth-last-child(1){
+            background-color: bisque;
+         } */
+          /* .boxes::before{
+            content: "Aman is good boy";
+            color: red;
+          }
+          .boxes::after{
+            content: "Aman is good boy";
+            color: blue;
+          } */
+          ::selection{
+            background-color: black;
+            color: aqua;
+          }
+          /* input::placeholder{
+            color: blue;
+          } */
+
+
+    </style>
+<body>
+    <div class="boxes">
+        <div  data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate id voluptatibus ratione
+            ipsa obcaecati harum consectetur aspernatur, vel amet esse quidem placeat vitae? Sunt, esse deserunt
+            adipisci molestiae repudiandae eveniet exercitationem animi aliquid similique.</div>
+        <div class="box">Im box2</div>
+        <div class="box">im box3</div>
+        
+        <input type="text" placeholder="Type your name"><br>
+    </div>
+</body>
+
+</html>

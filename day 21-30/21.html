@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specicfity and cascading</title>
+
+    <style>h2.red:hover {
+            background-color: aqua;
+        }
+
+        .vibrant{
+            /* important has highest priority */
+            /* background-color: aquamarine !important;  */
+
+        }
+        
+        .cred{
+            background-color: brown;    
+             /* #Last one has more specicficity */ 
+        }
+        #ruby{
+            background-color: black;
+        }
+                           
+
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Inline style has higher priority -->
+        <!-- <h1 style="background-color: red;" class="red  cred  vibrant">   -->
+            <!-- Hello Csss -->
+        <!-- </h1> -->
+        <h2 id="ruby" class="red">YO </h2>
+    </div>
+</body>
+</html>

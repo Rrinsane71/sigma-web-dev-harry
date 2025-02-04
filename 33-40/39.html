@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+
+    <style>
+        .parent{
+            /* height: 20vh; */
+            /* width: 50vw; */
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [pehla]120px [doosra]100px [t];
+            grid-template-rows: 100px 100px; 
+        }
+        .items{
+            background-color: blue;
+            height: 60px;
+            width: 60px;
+            border: 1px solid black;
+        }
+        .item-4{
+            grid-row: 1/2;
+            grid-column: doosra/t;
+        }
+    </style>
+</head>
+<body>
+        <div class="parent">
+                <div class="items">1</div>
+                <div class="items">2</div>
+                <div class="items">3</div>
+                <div class="items item-4">4</div>
+                <div class="items">5</div>
+        </div>
+</body>
+</html>

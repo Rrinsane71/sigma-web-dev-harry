@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .container{
+        height: 50vh;
+        width: 60vw;
+        background-color: rgb(7, 80, 55);
+    }
+    .box{
+        height: 50px;
+        width: 60px;
+        /* background-color: aqua; */
+        animation-name: amananime;
+        animation-duration: 5s;
+        /* animation-iteration-count: 5; */
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 2s;
+        /* animation-direction: alternate-reverse; */
+        animation-play-state: running;
+
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: amananime 10s ease-in-out  2s  1 forwards, aman2 3s ease-in-out 2s  1 ;
+    
+    }
+    @keyframes amananime{
+        from{
+            background-color: red;
+        }
+        to{
+            transform: translate(1000px);
+            background-color: yellow;
+        }
+    }
+    @keyframes aman2{
+        0%{
+            transform: rotate(100deg);
+        }
+        20%{
+            transform: rotate(300deg);
+            
+        }
+        50%{
+            
+            transform: rotate(350deg);
+        }
+        80%{
+            
+            transform: rotate(389deg);
+        }
+        100%{
+            
+            transform: rotate(399deg);
+        }
+    }
+</style>
+<body>
+        <div class="container">
+                <div class="box">
+                        "Hello"
+                </div>
+        </div>
+</body>
+</html>

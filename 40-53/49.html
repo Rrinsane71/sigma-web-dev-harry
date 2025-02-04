@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit and Position</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 250px;
+            /* background-color: aquamarine; */
+            border: 2px solid black;
+            background-image: url("https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/5-Series-2024/10182/1685002609273/front-left-side-47.jpg");
+            /* background-position: top right; */
+            /* background-position: center center; */
+            background-clip: border-box;
+        }
+        img{
+            height: 300px;
+            width: 250px;
+            object-fit: cover;
+            /* object-position:bottom left; */
+            object-position: 10px 20px;
+            object-fit: contain;
+            /* object-fit: fill; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <!-- <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/BMW/5-Series-2024/10182/1685002609273/front-left-side-47.jpg"
+            alt=""> -->
+    </div>
+</body>
+
+</html>
