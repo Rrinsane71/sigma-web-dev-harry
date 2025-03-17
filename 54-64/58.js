@@ -1,9 +1,10 @@
-// function nice(name){
-//     console.log("Hi " + name +  " YO You good")
-//     console.log("Hi " + name +  " YO You good")
-// }
+function nice(name){
+    console.log("Hi " + name +  " YO You good")
+    console.log("Hi " + name +  " YO You good")
+}
 
-// nice("Rohan");
+// calling the function
+nice("Rohan");
 
 function sum(a,b){
     console.log(a+b)

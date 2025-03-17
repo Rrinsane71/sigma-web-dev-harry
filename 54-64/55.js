@@ -9,12 +9,24 @@ console.log(a)
 
 }
 
+// primitive Data types
+
+let x= "harry"
+let y=56
+let z = null
+const w = true;
+let v= undefined;
+
+console.log(typeof x,typeof y,typeof z,typeof w,typeof v)
+
+// objects 
+
 let p ={
     name: "Aman",
     Age: "22",
     "job-role" : "Administartor"
 }
-console.log(p,p["job-role"])
+console.log(p)
 
 p.salary = "50000";
 console.log(p)
@@ -56,7 +68,6 @@ console.log(stud2);  // { name: "Shivam", age: 22 }
 // Deleting a property
 delete stud2.age;
 console.log(stud2);  // { name: "Shivam" }
-
 
 
 

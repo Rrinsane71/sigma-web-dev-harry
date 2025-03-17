@@ -11,9 +11,20 @@ grace+=age
 console.log(grace)
 
 
-
+// Ternary Operator
 a=8;
 b=10;
 let c=(a<b ? "A is greater" : "B is gretarer")
 
 console.log(c)
+
+
+
+a=5
+b=5
+if (a!=b && a==b){
+    console.log("Okay")
+}
+else{
+    console.log("nope")
+}
