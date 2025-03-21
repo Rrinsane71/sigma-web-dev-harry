@@ -1,10 +1,11 @@
+var a = prompt("enter the no");
+var b = prompt("enter  the no");
 
-function cal(a,b){
-    console.log("your  sum is",a+b)
-    console.log("division is",a/b)
-    console.log("Multiplication is ",a*b)
-    return [a+b,a/b,a*b]
+if(a>b){
+    console.log("You cant" )
 }
-result=cal(5,2)
+else{
+    console.log("You can" )
+} 
 
-console.log(result)
+let c=(age>18 ? "You can drive": "NOPE")

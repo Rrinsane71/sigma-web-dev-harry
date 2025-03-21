@@ -1,37 +1,37 @@
-// let a ={
-//     name: "Aman",
-//    "Roll-no": 56,
-//    "Mobile No": 9372662623,
-//    age:22
-// }
-// console.log(a)
-// a.hobbies="Video Games"
-// console.log(a)
+let a ={
+    name: "Aman",
+   "Roll-no": 56,
+   "Mobile No": 9372662623,
+   age:22
+}
+console.log(a)
+a.hobbies="Video Games"
+console.log(a)
 
-// document.title="Baaadmoshi"
-// document.body.style.backgroundColor="Green"
-
-
+document.title="Baaadmoshi"
+document.body.style.backgroundColor="Green"
 
 
 
-// // var a=5;
-// // a=a**2;
-// // console.log(a)
 
 
-// // var a = prompt("enter the no");
-// // var b = prompt("enter  the no");
+var a=5;
+a=a**2;
+console.log(a)
 
-// if(a>b){
-//     console.log("You cant" )
-// }
-// else{
-//     console.log("You can" )
-// } 
 
-// let c=(age>18 ? "You can drive": "NOPE")
+var a = prompt("enter the no");
+var b = prompt("enter  the no");
 
+if(a>b){
+    console.log("You cant" )
+}
+else{
+    console.log("You can" )
+} 
+
+
+let c=(age>18 ? "You can drive": "NOPE")
 
 
 
@@ -107,3 +107,51 @@ console.log(result)
 
 
 
+// chapter 3 JS
+
+const studentmarks={
+    harry : 98,
+    shubham:8,
+    ravi: 56
+}
+let stud = Object.keys(studentmarks)
+let marks = Object.values(studentmarks)
+
+
+// console.log(stud.length)
+
+// see stud i prints element present in index 0 as in array same does marks
+for(let i=0;i<stud.length;i++){
+    console.log(stud[i] +":" + marks[i]);
+}
+
+
+// for in loop
+const studentsmarks={
+    harry : 98,
+    shubham:8,
+    ravi: 56
+}
+
+for(const key in studentsmarks){
+    console.log(key,studentsmarks[key])
+
+}
+
+
+
+// for loop
+
+     let studmarks={
+        name:"Aman",
+        div :"A",
+        "mobile-no":93989808
+     }
+
+     stud=Object.keys(studmarks)
+     marks=Object.values(studmarks)
+
+     for(i=0;i<stud.length;i++)
+     {
+        console.log("The student is"  ,":"+ stud[i]  + marks[i])
+     }
